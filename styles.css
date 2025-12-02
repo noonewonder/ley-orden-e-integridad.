@@ -1,0 +1,483 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #1a2a44;
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #e74c3c;
+}
+
+/* Hero */
+#hero {
+    background: linear-gradient(rgba(26, 42, 68, 0.8), rgba(26, 42, 68, 0.8)), url('https://images.unsplash.com/photo-1589820289798-2f7d8e1d1d5f?q=80&w=2070&auto=format') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* Buttons */
+.cta-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.cta-button.large {
+    padding: 18px 40px;
+    font-size: 1.3rem;
+}
+
+.secondary-button {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #e74c3c;
+    padding: 10px 25px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.secondary-button:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Sections */
+#practice-areas,
+#about,
+#contact-cta {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#practice-areas {
+    background-color: white;
+}
+
+#about {
+    background-color: #ecf0f1;
+}
+
+#contact-cta {
+    background-color: #1a2a44;
+    color: white;
+}
+
+#practice-areas h2,
+#about h2,
+#contact-cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.practice-area {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.practice-area:hover {
+    transform: translateY(-10px);
+}
+
+.practice-area h3 {
+    color: #1a2a44;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2a44;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Page Hero (for inner pages) */
+#page-hero {
+    background: linear-gradient(rgba(26, 42, 68, 0.9), rgba(26, 42, 68, 0.9)), url('https://images.unsplash.com/photo-1589820289798-2f7d8e1d1d5f?q=80&w=2070&auto=format') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#page-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Contact Page */
+#contact-page {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.contact-form h3,
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #1a2a44;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.2);
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-item strong {
+    display: block;
+    color: #1a2a44;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.map iframe {
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 868px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    #page-hero h2 {
+        font-size: 2.4rem;
+    }
+}
+/* About Page Specific Styles */
+
+#firm-overview {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#firm-overview h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #1a2a44;
+}
+
+.large-text {
+    font-size: 1.4rem;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+#our-values {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.value h3 {
+    color: #1a2a44;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+#attorneys {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.attorneys-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.attorney {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.attorney:hover {
+    transform: translateY(-10px);
+}
+
+.attorney img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #e74c3c;
+}
+
+.attorney h3 {
+    font-size: 1.6rem;
+    color: #1a2a44;
+    margin-bottom: 8px;
+}
+
+.attorney .title {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.attorney .bio {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+#about-cta {
+    padding: 100px 20px;
+    background-color: #1a2a44;
+    color: white;
+    text-align: center;
+}
+
+#about-cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+/* Full Practice Areas Page */
+
+#full-practice-areas {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.practice-full {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    align-items: center;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.practice-full.reverse {
+    grid-template-columns: 1fr 80px;
+    text-align: right;
+}
+
+.practice-icon {
+    font-size: 3.5rem;
+    color: #e74c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.practice-full.reverse .practice-icon {
+    order: 2;
+}
+
+.practice-content h3 {
+    font-size: 2.2rem;
+    color: #1a2a44;
+    margin-bottom: 20px;
+}
+
+.practice-content p {
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.practice-content ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.practice-content ul li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+.practice-content ul li::before {
+    content: "✓";
+    color: #e74c3c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+#practice-cta {
+    padding: 100px 20px;
+    background: linear-gradient(rgba(26, 42, 68, 0.95), rgba(26, 42, 68, 0.95)), url('https://images.unsplash.com/photo-1589820289798-2f7d8e1d1d5f?q=80&w=2070&auto=format') center/cover;
+    color: white;
+    text-align: center;
+}
+
+#practice-cta h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .practice-full,
+    .practice-full.reverse {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .practice-full.reverse {
+        text-align: center;
+    }
+    .practice-icon {
+        order: -1 !important;
+        margin-bottom: 20px;
+    }
+    .practice-content h3 {
+        font-size: 1.9rem;
+    }
+}
